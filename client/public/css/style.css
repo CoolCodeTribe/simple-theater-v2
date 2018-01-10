@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.header {
+  padding: 25px;
+  background-color: #212121;
+}
+.header a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-size: 20px;
+}
+
+/* --------------main start---------------- */
+.main {
+  flex-grow: 1;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 92%;
+  margin: 0 auto;
+}
+.movie-box,.add-box {
+  width: 200px;
+  height: 335px;
+  padding: 8px;
+  box-shadow: 1px 1px 1px 1px #aaaaaa;
+  margin: 0 30px 10px 0;
+  position: relative;
+}
+.movie-img {
+  width: 100%;
+  height: 60%;
+  margin: 0 auto;
+  display: block;
+}
+.movie-name,.movie-date {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+.delete-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  cursor: pointer;
+}
+.movie-box:hover .delete-icon {
+  display: block;
+}
+.add-movie {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 300px;
+  font-size: 80px;
+  color: #212121;
+  cursor: pointer;
+}
+
+/* --------------main end---------------- */
+
+.footer {
+  background-color: #212121;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
